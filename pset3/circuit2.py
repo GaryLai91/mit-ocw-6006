@@ -385,7 +385,8 @@ class TracedCrossVerifier(CrossVerifier):
     """List that obeys the JSON format restrictions with the verifier trace."""
     return self.trace
 
-from full_circuit2 import BlitRangeIndex as RangeIndex
+from rangetree import AvlRangeIndex as RangeIndex
+#from full_circuit2 import AvlRangeIndex as RangeIndex
 
 # Command-line controller.
 if __name__ == '__main__':
